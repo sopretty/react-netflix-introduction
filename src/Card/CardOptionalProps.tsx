@@ -1,8 +1,11 @@
 import React from "react";
 
-const Card: React.FunctionComponent<{ title: string; srcImage: string }> = ({
-  title,
-  srcImage,
+const CardWithOptionalProps: React.FunctionComponent<{
+  title?: string;
+  srcImage?: string;
+}> = ({
+  title = "Breaking Bad",
+  srcImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Xz7AhXy8_BzMJfMTSOIrPPhbprot1bg3_A&usqp=CAU",
 }) => {
   return (
     <div
@@ -19,7 +22,7 @@ const Card: React.FunctionComponent<{ title: string; srcImage: string }> = ({
       <img
         style={{ borderRadius: "0.2vw" }}
         src={srcImage}
-        alt={title}
+        alt=""
         width="300"
         height="200"
       />
@@ -27,4 +30,4 @@ const Card: React.FunctionComponent<{ title: string; srcImage: string }> = ({
   );
 };
 
-export { Card };
+export { CardWithOptionalProps };
