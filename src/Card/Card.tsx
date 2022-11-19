@@ -1,4 +1,6 @@
-const Card = () => {
+import React from "react";
+
+const Card: React.FunctionComponent = () => {
   return (
     <div
       style={{
