@@ -1,0 +1,27 @@
+body {
+  background: #141414;
+}
+
+.search-field {
+  color: #fff;
+  height: 35px;
+  background: #000000bf;
+  border: 1px solid #ffffffd9;
+  outline: none;
+  display: flex;
+  align-self: center;
+  margin-right: 20px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  justify-content: space-between;
+  height: 68px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+}

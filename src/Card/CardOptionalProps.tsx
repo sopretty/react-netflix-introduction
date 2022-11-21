@@ -18,7 +18,7 @@ const CardWithOptionalProps: React.FunctionComponent<{
         alignItems: "center",
       }}
     >
-      <span>{title}</span>
+      <span style={{ color: "#e5e5e5" }}>{title}</span>
       <img
         style={{ borderRadius: "0.2vw" }}
         src={srcImage}
