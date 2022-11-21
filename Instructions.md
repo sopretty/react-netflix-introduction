@@ -1,8 +1,5 @@
-1. Modifier le composant Card.tsx
+1. Modifiez le composant « SearchField »
 
-- Ajouter des propriétés au composant (title, imageSrc, ...)
-- Modifier le JSX pour que ces propriétés soient prises en compte
-
-2. Modifier le composant App.tsx
-
-- Modifier le JSX pour ajouter les propriétés désirées
+- Utilisez le hook d’état « useState » avec une valeur par défaut
+- Connectez la valeur de l’état à votre input
+- Créez une fonction qui va changer la valeur de votre état dès que l’utilisateur écrit quelque chose
