@@ -1,7 +1,7 @@
-1. Créer un composant card
+1. Créez un composant card
 
-- créer un fichier Card.tsx
-- créer une fonction nommé "Card"
+- créez un fichier Card.tsx
+- créez une fonction nommé "Card"
 - voici un exemple de ce que pourrai retourner votre composant,
 n'hésitez pas à le changer si vous le voulez.
 <div
@@ -23,9 +23,9 @@ n'hésitez pas à le changer si vous le voulez.
     height="200"
     />
 </div>
-- exporter votre composant Card
+- exportez votre composant Card
 
 2. Dans le fichier App.tsx:
 
-- importer le composant Card
-- remplacer le JSX existant par votre Card
+- importez le composant Card
+- remplacez le JSX existant, en instanciant votre composant Card
