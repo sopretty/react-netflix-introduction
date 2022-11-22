@@ -5,16 +5,7 @@ const Card: React.FunctionComponent<{ title: string; srcImage: string }> = ({
   srcImage,
 }) => {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        width: "300px",
-        height: "200px",
-        margin: "8px",
-        alignItems: "center",
-      }}
-    >
+    <div className="card">
       <span style={{ color: "#e5e5e5" }}>{title}</span>
       <img
         style={{ borderRadius: "0.2vw" }}
