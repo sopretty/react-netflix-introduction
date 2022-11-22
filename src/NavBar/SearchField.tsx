@@ -1,15 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 
-const SearchField: React.FunctionComponent = () => {
-  const [inputValue, setInputValue] = useState("");
-
+const SearchField: React.FunctionComponent<{
+  searchFieldValue: string;
+  setSearchFieldValue: React.Dispatch<React.SetStateAction<string>>;
+}> = ({ searchFieldValue, setSearchFieldValue }) => {
   const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setInputValue(event.target.value);
+    setSearchFieldValue(event.target.value);
   };
 
   return (
     <input
-      value={inputValue}
+      value={searchFieldValue}
       onChange={onChange}
       className="search-field"
       type="text"

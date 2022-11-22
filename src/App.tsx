@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Card } from "./Card/Card";
 import "./App.css";
 import { CardWithOptionalProps } from "./Card/CardOptionalProps";
 import { NavBar } from "./NavBar/NavBar";
 
-function App() {
+const App: React.FunctionComponent = () => {
+  const [searchFieldValue, setSearchFieldValue] = useState("");
+
   return (
     <div>
-      <NavBar></NavBar>
+      <NavBar
+        searchFieldValue={searchFieldValue}
+        setSearchFieldValue={setSearchFieldValue}
+      ></NavBar>
       <div className="cards">
         <Card
           title="The Walking Dead"
@@ -17,6 +22,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;
