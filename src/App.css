@@ -24,4 +24,32 @@ body {
 .cards {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+  margin: 8px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card:hover {
+  transition: transform 500ms;
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.no-result {
+  display: flex;
+  height: 10;
+  justify-content: center;
+  margin-top: 48px;
+  color: #e5e5e5;
+  font-size: larger;
 }
