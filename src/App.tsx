@@ -7,11 +7,15 @@ import { NavBar } from "./NavBar/NavBar";
 const App: React.FunctionComponent = () => {
   const [searchFieldValue, setSearchFieldValue] = useState("");
 
+  const onSearchFieldValueChange = (value: string) => {
+    setSearchFieldValue(value);
+  };
+
   return (
     <div>
       <NavBar
         searchFieldValue={searchFieldValue}
-        setSearchFieldValue={setSearchFieldValue}
+        onSearchFieldValueChange={onSearchFieldValueChange}
       ></NavBar>
       <div className="cards">
         <Card

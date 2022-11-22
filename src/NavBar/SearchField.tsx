@@ -2,10 +2,10 @@ import React from "react";
 
 const SearchField: React.FunctionComponent<{
   searchFieldValue: string;
-  setSearchFieldValue: React.Dispatch<React.SetStateAction<string>>;
-}> = ({ searchFieldValue, setSearchFieldValue }) => {
+  onSearchFieldValueChange: (value: string) => void;
+}> = ({ searchFieldValue, onSearchFieldValueChange }) => {
   const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchFieldValue(event.target.value);
+    onSearchFieldValueChange(event.target.value);
   };
 
   return (

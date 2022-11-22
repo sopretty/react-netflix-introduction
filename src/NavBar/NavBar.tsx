@@ -4,8 +4,8 @@ import { SearchField } from "./SearchField";
 
 const NavBar: React.FunctionComponent<{
   searchFieldValue: string;
-  setSearchFieldValue: React.Dispatch<React.SetStateAction<string>>;
-}> = ({ searchFieldValue, setSearchFieldValue }) => {
+  onSearchFieldValueChange: (value: string) => void;
+}> = ({ searchFieldValue, onSearchFieldValueChange }) => {
   return (
     <div className="navbar">
       <img
@@ -14,7 +14,7 @@ const NavBar: React.FunctionComponent<{
       />
       <SearchField
         searchFieldValue={searchFieldValue}
-        setSearchFieldValue={setSearchFieldValue}
+        onSearchFieldValueChange={onSearchFieldValueChange}
       ></SearchField>
     </div>
   );
