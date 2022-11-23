@@ -1,8 +1,6 @@
-1. Modifier le composant Card.tsx
+1. Modifiez le composant « Card.tsx »
 
-- Ajouter des propriétés au composant (title, imageSrc, ...)
-- Modifier le JSX pour que ces propriétés soient prises en compte
+- Ajoutez des propriétés les propriétés « title » et « imageSrc » au composant « Card »
+- Modifiez le JSX pour que ces propriétés soient prises en compte pour créer votre « Card »
 
-2. Modifier le composant App.tsx
-
-- Modifier le JSX pour ajouter les propriétés désirées
+2. Modifiez le JSX du composant « App.tsx » pour ajouter les propriétés désirées
