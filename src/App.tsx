@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "./Card/Card";
 import { CardWithOptionalProps } from "./Card/CardOptionalProps";
 
-function App() {
+const App: React.FunctionComponent = () => {
   return (
     <div>
       <Card
@@ -12,6 +12,6 @@ function App() {
       <CardWithOptionalProps />
     </div>
   );
-}
+};
 
-export default App;
+export { App };
