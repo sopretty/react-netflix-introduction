@@ -1,8 +1,8 @@
 import React from "react";
 import { Card } from "./Card/Card";
 
-function App() {
+const App: React.FunctionComponent = () => {
   return <Card></Card>;
-}
+};
 
-export default App;
+export { App };
