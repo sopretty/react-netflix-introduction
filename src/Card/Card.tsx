@@ -12,7 +12,7 @@ const Card: React.FunctionComponent = () => {
         alignItems: "center",
       }}
     >
-      <span>The Walking Dead</span>
+      <span style={{ color: "#e5e5e5" }}>The Walking Dead</span>
       <img
         style={{ borderRadius: "0.2vw" }}
         src="https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:376/h:210/q:75/https://bleedingcool.com/wp-content/uploads/2022/09/TWD11_KA_HZ-2.jpg"
