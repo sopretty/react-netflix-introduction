@@ -1,10 +1,12 @@
 import React from "react";
+
+import "./App.css";
 import { Card } from "./Card/Card";
 import "./App.css";
 import { CardWithOptionalProps } from "./Card/CardOptionalProps";
 import { NavBar } from "./NavBar/NavBar";
 
-function App() {
+const App: React.FunctionComponent = () => {
   return (
     <div>
       <NavBar></NavBar>
@@ -17,6 +19,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
-export default App;
+export { App };
