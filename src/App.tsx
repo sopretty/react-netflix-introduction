@@ -15,7 +15,7 @@ const App: React.FunctionComponent = () => {
   };
 
   /**
-   * Créer une constante "filteredSeries" qui contient les films qui ont été filtré
+   * Créer une constante "filteredSeries" qui contient les films qui ont été filtrés
    */
 
   return (
