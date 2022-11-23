@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "http-server": "npx http-server . -p 3001",
+    "http-server": "npx http-server . -p 3001 --cors",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
