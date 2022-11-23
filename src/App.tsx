@@ -2,12 +2,11 @@ import React, { useState } from "react";
 import { Card } from "./Card/Card";
 import "./App.css";
 import { NavBar } from "./NavBar/NavBar";
-import { initialSeries } from "./series";
 import { NoResult } from "./NoResult/NoResult";
 
 const App: React.FunctionComponent = () => {
   const [searchFieldValue, setSearchFieldValue] = useState("");
-  const [series] = useState(initialSeries);
+  const [series] = useState<{ title: string; srcImage: string }[]>([]);
 
   const onSearchFieldValueChange = (value: string) => {
     setSearchFieldValue(value);
