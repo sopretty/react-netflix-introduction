@@ -6,7 +6,9 @@ import { NoResult } from "./NoResult/NoResult";
 
 const App: React.FunctionComponent = () => {
   const [searchFieldValue, setSearchFieldValue] = useState("");
-  const [series] = useState<{ title: string; srcImage: string }[]>([]);
+  const [series, setSeries] = useState<{ title: string; srcImage: string }[]>(
+    []
+  );
 
   const onSearchFieldValueChange = (value: string) => {
     setSearchFieldValue(value);
