@@ -1,0 +1,14 @@
+body {
+  background: #141414;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+  margin: 8px;
+  align-items: center;
+  overflow: hidden;
+}

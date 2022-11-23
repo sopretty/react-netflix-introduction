@@ -1,4 +1,6 @@
 import React from "react";
+
+import "./App.css";
 import { Card } from "./Card/Card";
 import { CardWithOptionalProps } from "./Card/CardOptionalProps";
 
