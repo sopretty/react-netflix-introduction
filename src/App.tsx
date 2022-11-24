@@ -4,7 +4,7 @@ import "./App.css";
 import { CardWithOptionalProps } from "./Card/CardOptionalProps";
 import { NavBar } from "./NavBar/NavBar";
 
-function App() {
+const App = () => {
   return (
     <div>
       <NavBar></NavBar>
@@ -19,4 +19,4 @@ function App() {
   );
 }
 
-export default App;
+export {App};
