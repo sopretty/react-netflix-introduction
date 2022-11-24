@@ -2,16 +2,12 @@ import React from "react";
 
 const SearchField: React.FunctionComponent<{
   searchFieldValue: string;
-  onSearchFieldValueChange: (value: string) => void;
-}> = ({ searchFieldValue, onSearchFieldValueChange }) => {
-  const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    onSearchFieldValueChange(event.target.value);
-  };
-
+  onSearchFieldChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+}> = ({ searchFieldValue, onSearchFieldChange }) => {
   return (
     <input
       value={searchFieldValue}
-      onChange={onChange}
+      onChange={onSearchFieldChange}
       className="search-field"
       type="text"
       placeholder="Search"

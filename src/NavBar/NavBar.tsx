@@ -4,8 +4,8 @@ import { SearchField } from "./SearchField";
 
 const NavBar: React.FunctionComponent<{
   searchFieldValue: string;
-  onSearchFieldValueChange: (value: string) => void;
-}> = ({ searchFieldValue, onSearchFieldValueChange }) => {
+  onSearchFieldChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+}> = ({ searchFieldValue, onSearchFieldChange }) => {
   return (
     <div className="navbar">
       <img
@@ -14,7 +14,7 @@ const NavBar: React.FunctionComponent<{
       />
       <SearchField
         searchFieldValue={searchFieldValue}
-        onSearchFieldValueChange={onSearchFieldValueChange}
+        onSearchFieldChange={onSearchFieldChange}
       ></SearchField>
     </div>
   );
