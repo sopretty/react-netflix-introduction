@@ -6,7 +6,7 @@ import { NoResult } from "./NoResult/NoResult";
 
 const App: React.FunctionComponent = () => {
   const [searchFieldValue, setSearchFieldValue] = useState("");
-  const [series, setSeries] = useState<{ title: string; srcImage: string }[]>(
+  const [series, setSeries] = useState<{ title: string; imageSrc: string }[]>(
     []
   );
 
@@ -30,7 +30,7 @@ const App: React.FunctionComponent = () => {
           <Card
             key={serie.title}
             title={serie.title}
-            srcImage={serie.srcImage}
+            imageSrc={serie.imageSrc}
           ></Card>
         ))}
       </div>
