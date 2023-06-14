@@ -29,7 +29,7 @@ const App: React.FunctionComponent = () => {
           <Card
             key={serie.title}
             title={serie.title}
-            srcImage={serie.srcImage}
+            imageSrc={serie.imageSrc}
           ></Card>
         ))}
       </div>

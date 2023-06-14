@@ -2,10 +2,10 @@ import React from "react";
 
 const CardWithOptionalProps: React.FunctionComponent<{
   title?: string;
-  srcImage?: string;
+  imageSrc?: string;
 }> = ({
   title = "Breaking Bad",
-  srcImage = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Xz7AhXy8_BzMJfMTSOIrPPhbprot1bg3_A&usqp=CAU",
+  imageSrc = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Xz7AhXy8_BzMJfMTSOIrPPhbprot1bg3_A&usqp=CAU",
 }) => {
   return (
     <div
@@ -21,7 +21,7 @@ const CardWithOptionalProps: React.FunctionComponent<{
       <span style={{ color: "#e5e5e5" }}>{title}</span>
       <img
         style={{ borderRadius: "0.2vw" }}
-        src={srcImage}
+        src={imageSrc}
         alt=""
         width="300"
         height="200"
