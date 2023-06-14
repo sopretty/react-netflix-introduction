@@ -21,7 +21,7 @@ export const initialSeries: Serie[] = [
   },
   {
     title: "The Crown",
-    imageSrc: "https://images.fanart.tv/fanart/the-crown-582844e79ac57.jpg",
+    imageSrc: "https://imgsrc.cineserie.com/2020/11/secrets-de-series-trois-secrets-sur-the-crown-4.jpg?ver=1",
   },
   {
     title: "Stranger Things",
