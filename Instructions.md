@@ -11,3 +11,5 @@
 - Supprimez le hook d’état
 - Modifiez les propriétés du composant pour prendre en compte la fonction qui lui passée et la valeur de l’état
 - Modifiez le JSX pour passer cette fonction et la valeur de l’état
+
+[Typescript]:  Voici le type de la fonction que vous devez passer à votre composant `onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;`
